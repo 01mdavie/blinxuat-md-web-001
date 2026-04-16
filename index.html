@@ -1,87 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern Azure Static Web App</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.umd.js"></script>
-</head>
-<body class="bg-gray-900 text-white overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Modern Site</title>
+    <script type="module" crossorigin src="/assets/index-BypJHjRW.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bmnk5kYk.css">
+  </head>
+  <body>
+    <div id="root"></div>
 
-  <!-- Navbar -->
-  <header class="fixed w-full bg-black/30 backdrop-blur-lg z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">MyStaticApp</h1>
-      <nav class="space-x-6">
-        <a href="#" class="hover:text-blue-400">Home</a>
-        <a href="#features" class="hover:text-blue-400">Features</a>
-        <a href="#about" class="hover:text-blue-400">About</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="h-screen flex flex-col justify-center items-center text-center relative">
-    <div id="hero" class="space-y-6">
-      <h2 class="text-5xl font-bold">Build Something Modern</h2>
-      <p class="text-lg text-gray-300">Animated, responsive, and ready for Azure Static Web Apps</p>
-      <button class="bg-blue-500 px-6 py-3 rounded-full hover:scale-110 transition">Get Started</button>
-    </div>
-
-    <!-- Animated background blobs -->
-    <div class="absolute w-72 h-72 bg-blue-500 rounded-full blur-3xl opacity-30 animate-pulse top-10 left-10"></div>
-    <div class="absolute w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-30 animate-pulse bottom-10 right-10"></div>
-  </section>
-
-  <!-- Features -->
-  <section id="features" class="max-w-6xl mx-auto px-6 py-20">
-    <h3 class="text-3xl font-bold text-center mb-12">Features</h3>
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <div class="bg-white/10 backdrop-blur-lg p-6 rounded-2xl hover:scale-105 transition">
-        <h4 class="text-xl font-semibold mb-2">⚡ Fast</h4>
-        <p class="text-gray-300">Optimized performance and CDN delivery.</p>
-      </div>
-
-      <div class="bg-white/10 backdrop-blur-lg p-6 rounded-2xl hover:scale-105 transition">
-        <h4 class="text-xl font-semibold mb-2">🎨 Modern UI</h4>
-        <p class="text-gray-300">Glassmorphism and smooth animations.</p>
-      </div>
-
-      <div class="bg-white/10 backdrop-blur-lg p-6 rounded-2xl hover:scale-105 transition">
-        <h4 class="text-xl font-semibold mb-2">🚀 Dynamic</h4>
-        <p class="text-gray-300">Interactive elements powered by JavaScript.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-20 text-center">
-    <h3 class="text-3xl font-bold mb-4">About</h3>
-    <p class="max-w-2xl mx-auto text-gray-400">This version includes animations, hover effects, and modern UI styling while remaining a simple static site.</p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center py-6 text-gray-500">
-    © 2026 MyStaticApp
-  </footer>
-
-  <script>
-    // Simple fade-in animation on load
-    document.addEventListener("DOMContentLoaded", () => {
-      const hero = document.getElementById("hero");
-      hero.style.opacity = 0;
-      hero.style.transform = "translateY(20px)";
-
-      setTimeout(() => {
-        hero.style.transition = "all 1s ease";
-        hero.style.opacity = 1;
-        hero.style.transform = "translateY(0)";
-      }, 200);
-    });
-  </script>
-
-</body>
+    <!-- THIS LINE IS CRITICAL -->
+  </body>
 </html>
