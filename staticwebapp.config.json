@@ -1,11 +1,11 @@
 {
   "routes": [
     {
-      "route": "/",
+      "route": "/login",
       "allowedRoles": ["anonymous"]
     },
     {
-      "route": "/login",
+      "route": "/assets/*",
       "allowedRoles": ["anonymous"]
     },
     {
