@@ -1,16 +1,12 @@
 {
   "routes": [
     {
-      "route": "/login",
-      "allowedRoles": ["anonymous"]
-    },
-    {
       "route": "/assets/*",
       "allowedRoles": ["anonymous"]
     },
     {
       "route": "/*",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["anonymous"]
     }
   ],
   "navigationFallback": {
@@ -18,3 +14,4 @@
     "exclude": ["/assets/*"]
   }
 }
+``
