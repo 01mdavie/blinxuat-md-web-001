@@ -5,40 +5,40 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Modern Site</title>
-    <script type="module" crossorigin src="/assets/index-W6RNWJZz.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BIPzU_92.css">
+    <script type="module" crossorigin src="/assets/index-pmG8J0AY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-vWug_ifc.css">
   </head>
   <body>
-    <div id="root">
-  <div class="loader"></div>
+<div id="root">
+  <div id="initial-loader">
+    <div class="loader"></div>
+  </div>
 </div>
 
     <!-- THIS LINE IS CRITICAL -->
   </body>
   
 <style>
-  #root {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-  }
+ #initial-loader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
 
-  .loader {
-    width: 32px;
-    height: 32px;
-    border: 3px solid #ddd;
-    border-top-color: #333;
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-  }
+.loader {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #ddd;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
 
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
 </style>
 
 </html>
