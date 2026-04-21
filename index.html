@@ -5,12 +5,40 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Modern Site</title>
-    <script type="module" crossorigin src="/assets/index-DE6oV0LF.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D_8QUayx.css">
+    <script type="module" crossorigin src="/assets/index-W6RNWJZz.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BIPzU_92.css">
   </head>
   <body>
-    <div id="root">Loading...</div>
+    <div id="root">
+  <div class="loader"></div>
+</div>
 
     <!-- THIS LINE IS CRITICAL -->
   </body>
+  
+<style>
+  #root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+  }
+
+  .loader {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #ddd;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+
 </html>
